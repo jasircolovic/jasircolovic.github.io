@@ -151,36 +151,39 @@ engineering from my high school studies.<br> This unique blend of skills allows 
     </section>
     <!-- projects section start -->
 <section id="projects">
-  <h2>Projects</h2>
-  <ul class="project-filters">
-    <li><button data-filter="all">All</button></li>
-    <li><button data-filter="web">Web</button></li>
-    <li><button data-filter="mobile">Mobile</button></li>
-    <li><button data-filter="design">Design</button></li>
-  </ul>
-  <ul class="project-list">
-    <li class="project-item web" data-categories="web">
-      <a href="project.html">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>Web development project using HTML, CSS, and JavaScript.</p>
-      </a>
-    </li>
-    <li class="project-item mobile" data-categories="mobile">
-      <a href="project.html">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Mobile app development project using React Native.</p>
-      </a>
-    </li>
-    <li class="project-item design" data-categories="design">
-      <a href="project.html">
-        <img src="project3.jpg" alt="Project 3">
-        <h3>Project 3</h3>
-        <p>Graphic design project using Adobe Illustrator.</p>
-      </a>
-    </li>
-  </ul>
+  <div class="max-width">
+    <h2 class="title"></h2>
+    <div class="projects-content">
+      <div class="column left">
+        <div class="text">Check out my latest projects</div>
+        <p>Here are some of the projects I've worked on recently. They range from web development projects, to mobile app development, to graphic design work.</p>
+        <a href="projects.html" class="link-btn">View all projects</a>
+      </div>
+      <div class="column right">
+        <div class="project web" data-categories="web">
+          <div class="info">
+            <span>Project 1</span>
+            <span>Web development</span>
+          </div>
+          <div class="line web"></div>
+        </div>
+        <div class="project mobile" data-categories="mobile">
+          <div class="info">
+            <span>Project 2</span>
+            <span>Mobile app development</span>
+          </div>
+          <div class="line mobile"></div>
+        </div>
+        <div class="project design" data-categories="design">
+          <div class="info">
+            <span>Project 3</span>
+            <span>Graphic design</span>
+          </div>
+          <div class="line design"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
     <!-- contact section start -->
     <section class="contact" id="contact">
