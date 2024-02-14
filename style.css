@@ -443,14 +443,7 @@ section .title::after{
 }
 
 .projects .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
+    content: "what I do";
 }
 
 .projects .intro-text {
