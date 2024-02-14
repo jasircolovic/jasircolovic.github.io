@@ -436,22 +436,46 @@ section .title::after{
   padding: 80px 0;
 }
 
-#projects h2::after {
-  content: "My projects";
+#projects h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#projects .sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.projects-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .projects-content .column {
   width: calc(50% - 30px);
 }
 
+.projects-content .left {
+  margin-right: 30px;
+}
+
 .projects-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-content .left p {
   text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-content .left a {
@@ -465,6 +489,7 @@ section .title::after{
   border-radius: 6px;
   border: 2px solid crimson;
   transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-content .left a:hover {
@@ -481,11 +506,13 @@ section .title::after{
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-content .right .info span {
   font-weight: 500;
   font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-content .right .line {
