@@ -437,11 +437,6 @@ section .title::after{
     position: relative;
 }
 
-.projects .title {
-    position: relative; /* Ensure relative positioning for the line */
-    padding-bottom: 10px; /* Add space between text and line */
-}
-
 .projects .title::before {
     content: "what I do";
 }
