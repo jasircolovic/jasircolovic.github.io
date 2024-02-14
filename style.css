@@ -430,12 +430,7 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
-
 /*project section styling*/
-.projects {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-}
 
 .projects .title::before {
     content: "what I do";
