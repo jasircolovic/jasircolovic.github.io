@@ -435,23 +435,9 @@ section .title::after{
 #projects {
   padding: 80px 0;
 }
-
-#projects h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 60px;
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-#projects .sub-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-
+.projects .title::after{
+    content: "what I do";
+    
 .projects-content {
   display: flex;
   flex-wrap: wrap;
