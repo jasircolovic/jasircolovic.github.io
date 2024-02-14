@@ -434,11 +434,15 @@ section .title::after{
 /*project section styling*/
 .projects {
     font-family: 'Ubuntu', sans-serif;
-    position: relative; /* Ensure proper positioning of pseudo-elements */
+    position: relative;
 }
 
-.projects .title::before,
-.projects .title::after {
+.projects .title {
+    position: relative; /* Ensure relative positioning for the line */
+    padding-bottom: 10px; /* Add space between text and line */
+}
+
+.projects .title::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -447,15 +451,6 @@ section .title::after{
     height: 3px;
     background: #111;
     transform: translateX(-50%);
-}
-
-.projects .title::before {
-    transform: translateX(-50%) rotate(180deg); /* Rotate the line for consistency */
-}
-
-.projects .title::after {
-    content: "what I've worked on";
-    padding: 0 10px; /* Add padding to separate text from the line */
 }
 
 .projects .intro-text {
@@ -497,7 +492,6 @@ section .title::after{
     font-size: 16px;
     color: #333;
 }
-
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
