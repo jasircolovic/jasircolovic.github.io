@@ -434,9 +434,28 @@ section .title::after{
 /*project section styling*/
 .projects {
     font-family: 'Ubuntu', sans-serif;
+    position: relative; /* Ensure proper positioning of pseudo-elements */
 }
+
+.projects .title::before,
+.projects .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.projects .title::before {
+    transform: translateX(-50%) rotate(180deg); /* Rotate the line for consistency */
+}
+
 .projects .title::after {
     content: "what I've worked on";
+    padding: 0 10px; /* Add padding to separate text from the line */
 }
 
 .projects .intro-text {
