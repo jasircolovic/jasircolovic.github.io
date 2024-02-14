@@ -430,6 +430,95 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
+
+/*project section styling*/
+.projects .title::after {
+  content: "My Work";
+}
+
+.projects .projects-content .column {
+  width: calc(50% - 30px);
+}
+
+.projects .projects-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.projects .projects-content .left p {
+  text-align: justify;
+}
+
+.projects .projects-content .left a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.projects .projects-content .left a:hover {
+  color: crimson;
+  background: none;
+}
+
+.projects .projects-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.projects .projects-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects .projects-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.projects .projects-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.projects .projects-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+.projects-content .right .project1::before {
+  width: 80%;
+}
+
+.projects-content .right .project2::before {
+  width: 70%;
+}
+
+.projects-content .right .project3::before {
+  width: 60%;
+}
+
+.projects-content .right .project4::before {
+  width: 90%;
+}
+
+.projects-content .right .project5::before {
+  width: 50%;
+}
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
