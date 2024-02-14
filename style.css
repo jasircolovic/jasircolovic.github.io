@@ -432,92 +432,76 @@ section .title::after{
 }
 
 /*project section styling*/
-.projects .title::after {
-  content: "My Work";
+#projects {
+  padding: 80px 0;
 }
 
-.projects .projects-content .column {
-  width: calc(50% - 30px);
+#projects h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
-.projects .projects-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.projects .projects-content .left p {
-  text-align: justify;
-}
-
-.projects .projects-content .left a {
-  display: inline-block;
-  background: crimson;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-}
-
-.projects .projects-content .left a:hover {
-  color: crimson;
-  background: none;
-}
-
-.projects .projects-content .right .bars {
-  margin-bottom: 15px;
-}
-
-.projects .projects-content .right .info {
+.project-filters {
+  list-style: none;
   display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.projects .projects-content .right span {
-  font-weight: 500;
+.project-filters li {
+  margin: 0 10px;
+}
+
+.project-filters button {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
   font-size: 18px;
+  font-weight: 500;
 }
 
-.projects .projects-content .right .line {
-  height: 5px;
+.project-filters button:focus {
+  outline: none;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -20px;
+}
+
+.project-item {
+  width: 33.33%;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-item a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.project-item img {
   width: 100%;
-  background: lightgrey;
-  position: relative;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.projects .projects-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: crimson;
+.project-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-.projects-content .right .project1::before {
-  width: 80%;
-}
-
-.projects-content .right .project2::before {
-  width: 70%;
-}
-
-.projects-content .right .project3::before {
-  width: 60%;
-}
-
-.projects-content .right .project4::before {
-  width: 90%;
-}
-
-.projects-content .right .project5::before {
-  width: 50%;
+.project-item p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 /* contact section styling */
 .contact .title::after{
