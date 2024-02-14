@@ -432,102 +432,50 @@ section .title::after{
 }
 
 /*project section styling*/
-#projects {
-  padding: 80px 0;
-}
-.projects .title::after{
-    content: "what I do";
-    
-.projects-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.projects .title::after {
+    content: "what I've worked on";
 }
 
-.projects-content .column {
-  width: calc(50% - 30px);
+.projects .intro-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-.projects-content .left {
-  margin-right: 30px;
+.projects .github-button {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.projects-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-family: 'Ubuntu', sans-serif;
+.projects .github-button:hover {
+    color: crimson;
+    background: none;
 }
 
-.projects-content .left p {
-  text-align: justify;
-  font-family: 'Ubuntu', sans-serif;
+.projects .projects-content .highlighted-project,
+.projects .projects-content .other-projects .project {
+    margin-bottom: 15px;
 }
 
-.projects-content .left a {
-  display: inline-block;
-  background: crimson;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-  font-family: 'Ubuntu', sans-serif;
+.projects .projects-content h3 {
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.projects-content .left a:hover {
-  color: crimson;
-  background: none;
+.projects .projects-content p {
+    font-size: 16px;
+    color: #333;
 }
 
-.projects-content .right .project {
-  margin-bottom: 15px;
-}
-
-.projects-content .right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.projects-content .right .info span {
-  font-weight: 500;
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.projects-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-
-.projects-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: crimson;
-}
-
-.projects-content .right .web::before {
-  width: 90%;
-}
-
-.projects-content .right .mobile::before {
-  width: 70%;
-}
-
-.projects-content .right .design::before {
-  width: 60%;
-}
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
