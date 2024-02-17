@@ -463,7 +463,7 @@ section .title::after{
 }
 
 .projects .projects-content .highlighted-project,
-.projects .projects-content .other-projects .project {
+.projects .projects-content .other-projects .project .projects .intro-text {
     margin-bottom: 15px;
     font-family: Ubuntu, sans-serif;
 }
