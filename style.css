@@ -36,7 +36,8 @@ section{
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.projects .projects-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -464,6 +465,7 @@ section .title::after{
 .projects .projects-content .highlighted-project,
 .projects .projects-content .other-projects .project {
     margin-bottom: 15px;
+    font-family: Ubuntu, sans-serif;
 }
 
 .projects .projects-content h3 {
