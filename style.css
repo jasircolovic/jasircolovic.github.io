@@ -456,6 +456,7 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .projects .github-button:hover {
