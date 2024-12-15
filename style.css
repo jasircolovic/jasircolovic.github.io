@@ -432,7 +432,14 @@ section .title::after{
     background: crimson!important;
 }
 /*project section styling*/
-
+.projects {
+    text-align: center;
+}
+.projects {
+display: flex;
+jusify-content: center;
+align-items: center;
+}
 .projects .title::after {
     content: "what I do";
 }
@@ -445,19 +452,18 @@ section .title::after{
 }
 
 .projects .github-button {
-    display: inline-block;
+    display: block;
     background: crimson;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
-    margin-top: 20px;
+    margin: 20px auto 0;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    align-items: center;
 }
 
 .projects .github-button:hover {
