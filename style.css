@@ -432,14 +432,6 @@ section .title::after{
     background: crimson!important;
 }
 /*project section styling*/
-.projects {
-    text-align: center;
-}
-.projects {
-display: flex;
-jusify-content: center;
-align-items: center;
-}
 .projects .title::after {
     content: "what I do";
 }
