@@ -468,7 +468,7 @@ section .title::after{
 
 /* Center GitHub button */
 .projects .github-button {
-  display: block;
+  display: inline-block;
   background: crimson;
   color: #fff;
   font-size: 18px;
