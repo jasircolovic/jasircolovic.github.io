@@ -431,60 +431,73 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
-/*project section styling*/
+/* Project section styling */
 .projects .title::after {
-    content: "what I do";
+  content: "what I do";
 }
 
 .projects .intro-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #555;
-    font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+  font-family: 'Ubuntu', sans-serif;
 }
 
+/* Center the highlighted project content */
+.projects .projects-content {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Aligns vertically if needed */
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center;
+}
+
+.projects .projects-content .highlighted-project {
+  margin: 20px 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Image styling */
+.project-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transform: scale(0.8);
+}
+
+/* Center GitHub button */
 .projects .github-button {
-    display: block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin: 20px auto 0;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
+  display: block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin: 20px auto; /* Center horizontally */
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 
 .projects .github-button:hover {
-    color: crimson;
-    background: none;
-}
-
-.projects .projects-content .highlighted-project,
-.projects .projects-content .other-projects .project {
-    margin-bottom: 15px;
-    font-family: Ubuntu, sans-serif;
+  color: crimson;
+  background: none;
 }
 
 .projects .projects-content h3 {
-    font-weight: 500;
-    font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .projects .projects-content p {
-    font-size: 16px;
-    color: #333;
+  font-size: 16px;
+  color: #333;
 }
-.project-image {
-    width: 100%; 
-    max-height: 200px;
-    object-fit: cover; 
-    margin-bottom: 15px;
-    transform : scale(0.8);
-}
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
